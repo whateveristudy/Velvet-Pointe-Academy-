@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -12,7 +12,7 @@ import "./styles/App.css";
 const App = () => {
 
   return (
-    <BrowserRouter>
+    <Router>
 
       <div className="app-wrapper">
 
@@ -52,7 +52,7 @@ const App = () => {
 
       </div>
 
-    </BrowserRouter>
+    </Router>
   );
 
 };

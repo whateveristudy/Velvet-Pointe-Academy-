@@ -63,7 +63,7 @@ const Classes = () => {
   return (
     <div className="classes-page">
 
-      {/* Introduction */}
+
       <section className="classes-hero">
         <div className="classes-wrap classes-hero-content">
 
@@ -88,8 +88,6 @@ const Classes = () => {
 
         </div>
       </section>
-
-      {/* Classes */}
       <section className="classes-list">
         <div className="classes-wrap">
 
@@ -157,7 +155,6 @@ const Classes = () => {
         </div>
       </section>
 
-      {/* Contact section */}
       <section className="classes-guide">
         <div className="classes-wrap">
           <h2>Not sure where to begin?</h2>
