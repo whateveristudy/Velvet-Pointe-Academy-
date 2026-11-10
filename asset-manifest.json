@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react/static/css/main.c733c111.css",
+    "main.js": "/react/static/js/main.65b1158f.js",
+    "static/media/download14.jpg": "/react/static/media/download14.c330cc86fd57a06d3b6d.jpg",
+    "static/media/logo.png": "/react/static/media/logo.e5659b9ea7e1997ead7c.png",
+    "static/media/image1.jpg": "/react/static/media/image1.2de623bdf686889f453d.jpg",
+    "static/media/background.jpg": "/react/static/media/background.8117ed7d2f95de6d4acb.jpg",
+    "static/media/image2.jpg": "/react/static/media/image2.5f5b74ae4ddeaa406204.jpg",
+    "static/media/image4.jpg": "/react/static/media/image4.4a023a0ea8145ebbf581.jpg",
+    "static/media/image3.jpg": "/react/static/media/image3.7759d291d3f07d04c4da.jpg",
+    "static/media/better.png": "/react/static/media/better.258c1b1cb1f730d77333.png",
+    "index.html": "/react/index.html",
+    "main.c733c111.css.map": "/react/static/css/main.c733c111.css.map",
+    "main.65b1158f.js.map": "/react/static/js/main.65b1158f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c733c111.css",
+    "static/js/main.65b1158f.js"
+  ]
+}
