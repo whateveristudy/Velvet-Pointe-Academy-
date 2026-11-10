@@ -42,6 +42,11 @@ const Apply = () => {
 
     setSubmitted(true);
 
+    if(formData.age < 8 || formData.age > 100) {
+      alert("Age must be between 8 and 100.");
+      setSubmitted(false);
+      return;
+    }
   };
 
 
