@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Velvet-Pointe-Academy-/static/css/main.ffb05dd2.css",
-    "main.js": "/Velvet-Pointe-Academy-/static/js/main.4b85acfa.js",
+    "main.css": "/Velvet-Pointe-Academy-/static/css/main.9fdaa33b.css",
+    "main.js": "/Velvet-Pointe-Academy-/static/js/main.2611bad5.js",
     "static/media/download14.jpg": "/Velvet-Pointe-Academy-/static/media/download14.c330cc86fd57a06d3b6d.jpg",
     "static/media/logo.png": "/Velvet-Pointe-Academy-/static/media/logo.e5659b9ea7e1997ead7c.png",
     "static/media/image1.jpg": "/Velvet-Pointe-Academy-/static/media/image1.2de623bdf686889f453d.jpg",
@@ -11,11 +11,11 @@
     "static/media/image3.jpg": "/Velvet-Pointe-Academy-/static/media/image3.7759d291d3f07d04c4da.jpg",
     "static/media/better.png": "/Velvet-Pointe-Academy-/static/media/better.258c1b1cb1f730d77333.png",
     "index.html": "/Velvet-Pointe-Academy-/index.html",
-    "main.ffb05dd2.css.map": "/Velvet-Pointe-Academy-/static/css/main.ffb05dd2.css.map",
-    "main.4b85acfa.js.map": "/Velvet-Pointe-Academy-/static/js/main.4b85acfa.js.map"
+    "main.9fdaa33b.css.map": "/Velvet-Pointe-Academy-/static/css/main.9fdaa33b.css.map",
+    "main.2611bad5.js.map": "/Velvet-Pointe-Academy-/static/js/main.2611bad5.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffb05dd2.css",
-    "static/js/main.4b85acfa.js"
+    "static/css/main.9fdaa33b.css",
+    "static/js/main.2611bad5.js"
   ]
 }
