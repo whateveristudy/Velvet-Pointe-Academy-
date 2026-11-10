@@ -1,0 +1,365 @@
+/* Main page */
+.classes-page {
+  --class-bg: #fff9f5;
+  --class-surface: #f8efe6;
+  --class-ink: #4a3a33;
+  --class-muted: #76665f;
+  --class-rose: #a8736c;
+  --class-sand: #f0e4d3;
+  --class-line: #eadfd6;
+
+  background: var(--class-bg);
+  color: var(--class-ink);
+  font-family: "Lato", sans-serif;
+}
+
+.classes-wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* Introduction */
+/* Introduction with background image */
+.classes-hero {
+  padding: 95px 0 65px;
+  background:
+    linear-gradient(
+      rgba(234, 211, 195, 0.444),
+      rgba(240, 234, 231, 0.393)
+    ),
+    url("../assests/background.jpg") center/cover no-repeat;
+}
+.classes-hero-content {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 72px;
+  align-items: end;
+}
+
+.hero-label {
+  color: var(--class-rose);
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+}
+
+.hero-heading h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(55px, 6.5vw, 82px);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--class-ink);
+  margin: 0;
+}
+
+.hero-description {
+  color: var(--class-muted);
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 500px;
+  margin: 0 0 28px;
+}
+
+/* Class navigation links */
+.class-level-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.class-level-links a {
+  padding: 9px 19px;
+  border: 1px solid var(--class-line);
+  border-radius: 30px;
+  color: var(--class-ink);
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.class-level-links a:hover {
+  border-color: var(--class-rose);
+  color: var(--class-rose);
+}
+
+/* Class rows */
+.classes-list {
+  border-top: 1px solid var(--class-line);
+}
+
+.class-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 88px;
+  align-items: center;
+  padding: 85px 0;
+  border-bottom: 1px solid var(--class-line);
+  scroll-margin-top: 100px;
+}
+
+/* Alternate image positions */
+.class-row:nth-child(even) .class-photo {
+  order: 2;
+}
+
+/* Class images */
+.class-photo {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.class-photo::after {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.class-photo span {
+  position: absolute;
+  left: 25px;
+  bottom: 23px;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 1px;
+  z-index: 1;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Class descriptions */
+.class-copy {
+  padding: 10px 0;
+}
+
+.class-stage {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--class-rose);
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.stage-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.stage-dots i {
+  display: block;
+  width: 22px;
+  height: 3px;
+  border-radius: 3px;
+  background: var(--class-line);
+}
+
+.stage-dots i.active {
+  background: var(--class-rose);
+}
+
+.class-copy h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(35px, 4vw, 49px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--class-ink);
+  margin: 0 0 20px;
+}
+
+.class-copy p {
+  color: var(--class-muted);
+  font-size: 16px;
+  line-height: 1.9;
+  max-width: 480px;
+  margin: 0 0 30px;
+}
+
+/* Apply button */
+.class-actions {
+  display: flex;
+  align-items: center;
+}
+
+.apply-button,
+.guide-button {
+  display: inline-block;
+  padding: 13px 27px;
+  border-radius: 30px;
+  background: var(--class-ink);
+  color: var(--class-bg);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.apply-button:hover,
+.guide-button:hover {
+  background: var(--class-rose);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Bottom contact section */
+/* Bottom contact section */
+.classes-guide {
+  background:
+    linear-gradient(
+      rgba(249, 231, 218, 0.78),
+      rgba(237, 228, 224, 0.78)
+    ),
+    url("../assests/background.jpg") center/cover no-repeat;
+
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.classes-guide h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--class-ink);
+  margin: 0 0 15px;
+}
+
+.classes-guide p {
+  color: var(--class-muted);
+  max-width: 520px;
+  margin: 0 auto 30px;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .classes-wrap {
+    padding: 0 22px;
+  }
+
+  .classes-hero {
+    padding: 60px 0 45px;
+  }
+
+  .classes-hero-content {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .class-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    padding: 60px 0;
+  }
+
+  .class-photo {
+    aspect-ratio: 4 / 5;
+  }
+
+  .class-copy h2 {
+    font-size: 36px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  .classes-hero {
+    padding: 50px 0 40px;
+  }
+
+  .hero-heading h1 {
+    font-size: 52px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .class-row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 45px 0;
+  }
+
+  .class-row:nth-child(even) .class-photo {
+    order: 0;
+  }
+
+  .class-photo {
+    aspect-ratio: 4 / 3;
+  }
+
+  .class-copy h2 {
+    font-size: 36px;
+  }
+
+  .class-copy p {
+    font-size: 15px;
+  }
+
+  .classes-guide {
+    padding: 60px 20px;
+  }
+
+  .classes-guide h2 {
+    font-size: 34px;
+  }
+}
+/* Class details */
+.class-details {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: start;
+  margin: 0 0 35px;
+  padding: 16px 0;
+  border-top: 1px solid var(--class-line);
+  border-bottom: 1px solid var(--class-line);
+}
+
+.class-details div {
+  display: flex;
+  flex-direction: column;
+  padding-right: 25px;
+  margin-right: 25px;
+  border-right: 1px solid var(--class-line);
+}
+
+.class-details div:last-child {
+  border-right: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.class-details span {
+  color: var(--class-muted);
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.class-details strong {
+  color: var(--class-ink);
+  font-family: "Playfair Display", serif;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+/* Mobile details */
+@media (max-width: 450px) {
+  .class-details div {
+    padding-right: 12px;
+    margin-right: 12px;
+  }
+
+  .class-details strong {
+    font-size: 16px;
+  }
+}

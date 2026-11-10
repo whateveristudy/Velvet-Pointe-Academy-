@@ -1,0 +1,185 @@
+.home-hero {
+  min-height: 600px;
+  background:
+    linear-gradient(
+      rgba(45, 34, 29, 0.45),
+      rgba(45, 34, 29, 0.45)
+    ),
+    url("../assests/download14.jpg");
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero-overlay {
+  max-width: 750px;
+  color: rgb(255, 255, 255);
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+.hero-label {
+  font-size: 13px;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+}
+
+.hero-overlay h1 {
+  font-size: clamp(38px, 6vw, 68px);
+  margin-bottom: 25px;
+}
+
+.hero-description {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 650px;
+  line-height: 1.8;
+}
+
+.hero-button {
+  display: inline-block;
+  background-color: var(--beige);
+  color: var(--brown);
+  border-radius: 30px;
+  padding: 15px 32px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  background-color: var(--rose);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.home-intro {
+  text-align: center;
+  max-width: 850px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.small-heading {
+  color: var(--rose);
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.home-intro h2,
+.features-heading h2,
+.home-cta h2 {
+  font-size: clamp(30px, 4vw, 43px);
+  margin-bottom: 25px;
+}
+
+.home-intro > p:not(.small-heading) {
+  color: var(--light-brown);
+  font-size: 17px;
+  line-height: 2;
+  margin-bottom: 30px;
+}
+
+.outline-button {
+  display: inline-block;
+  padding: 13px 30px;
+  border: 1px solid var(--rose);
+  border-radius: 30px;
+  color: var(--brown);
+  transition: 0.3s;
+}
+
+.outline-button:hover {
+  background-color: var(--rose);
+  color: white;
+}
+
+.home-features {
+  background-color: var(--cream);
+  padding: 85px 0;
+   background:
+    linear-gradient(
+      rgba(229, 185, 153, 0.234),
+      rgba(240, 234, 231, 0.393)
+    ),
+    url("../assests/background.jpg") center/cover no-repeat;
+}
+
+.features-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.feature-card {
+  height: 100%;
+  min-height: 240px;
+  background-color: var(--ivory);
+  border-radius: 18px;
+  padding: 35px 28px;
+  text-align: center;
+  transition: 0.3s;
+  border: 1px solid var(--border);
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(73, 55, 46, 0.08);
+}
+
+.feature-card span {
+  color: var(--rose);
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.feature-card h3 {
+  font-size: 22px;
+  margin: 22px 0 15px;
+}
+
+.feature-card p {
+  color: var(--light-brown);
+  line-height: 1.8;
+}
+
+.home-cta {
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.home-cta p:not(.small-heading) {
+  color: var(--light-brown);
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+
+  .home-hero {
+    min-height: 480px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .home-intro {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .home-features {
+    padding: 65px 0;
+  }
+
+}

@@ -1,0 +1,212 @@
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  background-color: #FFFAF5;
+  border-top: 5px solid #294653;
+  border-bottom: 1px solid #E8DDD2;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 6%;
+  position: relative;
+  z-index: 100;
+}
+
+/* LEFT SIDE */
+
+.leftSide {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo and academy name */
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  text-decoration: none;
+  color: #49372E;
+
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.logoLink img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.logoLink:hover {
+  color: #C49A98;
+}
+
+/* RIGHT SIDE */
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.rightSide a {
+  color: #49372E;
+  text-decoration: none;
+
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+.rightSide a:hover {
+  color: #C49A98;
+}
+
+/* Apply button */
+
+.rightSide .applyLink {
+  background-color: #EFE0CA;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.rightSide .applyLink:hover {
+  background-color: #C49A98;
+  color: white;
+}
+
+/* HIDE MOBILE LINKS ON DESKTOP */
+
+.hiddenLinks {
+  display: none;
+}
+
+/* HIDE MENU BUTTON ON DESKTOP */
+
+.rightSide button {
+  display: none;
+  background: none;
+  border: none;
+  color: #49372E;
+  cursor: pointer;
+}
+
+
+/* TABLET AND MOBILE */
+
+@media only screen and (max-width: 850px) {
+
+  .navbar {
+    height: 85px;
+    padding: 0 5%;
+  }
+
+  .logoLink {
+    font-size: 18px;
+  }
+
+  .logoLink img {
+    width: 55px;
+    height: 55px;
+  }
+
+  /* Hide normal navigation */
+
+  .rightSide a {
+    display: none;
+  }
+
+  /* Show menu button */
+
+  .rightSide button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+  /* Mobile menu */
+
+  .hiddenLinks {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    top: 80px;
+    left: 0;
+
+    width: 100%;
+    background-color: #FFFAF5;
+
+    padding: 0 6%;
+    gap: 20px;
+
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+
+    transition: max-height 0.3s ease,
+                opacity 0.3s ease,
+                padding 0.3s ease;
+  }
+
+  .hiddenLinks a {
+    color: #49372E;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .hiddenLinks a:hover {
+    color: #C49A98;
+  }
+
+  /* Open menu */
+
+  #open .hiddenLinks {
+    max-height: 350px;
+    opacity: 1;
+    padding: 25px 6%;
+    border-bottom: 1px solid #E8DDD2;
+  }
+
+  /* Closed menu */
+
+  #close .hiddenLinks {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+}
+
+
+/* SMALL MOBILE SCREENS */
+
+@media only screen and (max-width: 480px) {
+
+  .navbar {
+    padding: 0 4%;
+  }
+
+  .logoLink {
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  .logoLink img {
+    width: 48px;
+    height: 48px;
+  }
+
+}

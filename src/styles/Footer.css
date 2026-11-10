@@ -1,0 +1,87 @@
+.academy-footer {
+  background-color: var(--brown);
+  color: var(--ivory);
+  padding: 25px 0 15px;
+  margin-top: auto;
+}
+
+/* Main footer layout */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Academy brand */
+
+.footer-brand {
+  flex: 1;
+}
+
+.footer-brand h3 {
+  font-size: 27px;
+  margin-bottom: 15px;
+}
+
+.footer-brand p,
+.footer-contact p {
+  color: #D9C9BC;
+  font-size: 14px;
+}
+
+/* Contact - far right */
+
+.footer-contact {
+  margin-left: auto;
+  margin-top: 0;
+  padding: 0 5px 0 0;
+  text-align: right;
+  align-self: flex-start;
+}
+
+.footer-contact h5 {
+  margin: 0 0 8px;
+  color: var(--beige);
+}
+
+.footer-contact p {
+  margin-top: 0;
+}
+
+/* Bottom copyright */
+
+.footer-bottom {
+  border-top: 1px solid #76665C;
+  padding-top: 20px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #D9C9BC;
+  font-size: 12px;
+  margin: 0;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .footer-brand,
+  .footer-contact {
+    width: 100%;
+  }
+
+  .footer-contact {
+    margin-left: 0;
+    text-align: left;
+    padding: 0;
+  }
+}

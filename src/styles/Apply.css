@@ -1,0 +1,245 @@
+.apply-page {
+  background-color: var(--cream);
+  padding: 75px 15px;
+}
+
+.apply-card {
+  max-width: 950px;
+  margin: auto;
+  background-color: var(--ivory);
+  border-radius: 22px;
+  padding: 55px 65px;
+  box-shadow: 0 8px 30px rgba(73, 55, 46, 0.06);
+}
+
+.apply-heading {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 55px;
+}
+
+.apply-heading h1 {
+  font-size: clamp(32px, 5vw, 46px);
+  margin: 15px 0 20px;
+}
+
+.apply-heading > p:last-child {
+  color: var(--light-brown);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.apply-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 18px;
+  margin: 45px 0 30px;
+}
+
+.apply-section-heading span {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--beige);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--brown);
+}
+
+.apply-section-heading h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.apply-card .form-label {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--brown);
+}
+
+.apply-input {
+  width: 100%;
+  min-height: 55px;
+  border: 1px solid #DDD4CA;
+  border-radius: 30px;
+  background-color: white;
+  padding: 13px 20px;
+  color: var(--brown);
+  font-family: 'Lato', sans-serif;
+  transition: 0.3s;
+}
+
+.apply-input::placeholder {
+  color: #A2958B;
+}
+
+.apply-input:focus {
+  border-color: var(--rose);
+  box-shadow: 0 0 0 3px rgba(196, 154, 152, 0.15);
+  outline: none;
+}
+
+.apply-textarea {
+  border-radius: 15px;
+  min-height: 150px;
+  resize: vertical;
+}
+
+.optional-text {
+  color: #A2958B;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.apply-bottom {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.apply-bottom p {
+  color: var(--light-brown);
+  font-size: 13px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.apply-submit-button {
+  display: inline-block;
+  background-color: var(--beige);
+  color: var(--brown);
+  border: none;
+  border-radius: 30px;
+  padding: 15px 42px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.apply-submit-button:hover {
+  background-color: var(--rose);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.apply-bottom > span {
+  display: block;
+  color: var(--light-brown);
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+
+/* SUCCESS PAGE */
+
+.apply-success-container {
+  min-height: 75vh;
+  background-color: var(--cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.apply-success-card {
+  max-width: 650px;
+  width: 100%;
+  background-color: var(--ivory);
+  padding: 60px 40px;
+  text-align: center;
+  border-radius: 22px;
+  box-shadow: 0 8px 30px rgba(73, 55, 46, 0.06);
+}
+
+.success-icon {
+  width: 65px;
+  height: 65px;
+  background-color: var(--beige);
+  color: var(--brown);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin: 0 auto 25px;
+}
+
+.apply-success-card h1 {
+  font-size: 45px;
+  margin: 15px 0;
+}
+
+.apply-success-card h3 {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.apply-success-card p:not(.small-heading) {
+  color: var(--light-brown);
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.apply-success-card .apply-submit-button {
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+  .apply-page {
+    padding: 40px 12px;
+  }
+
+  .apply-card {
+    padding: 35px 22px;
+  }
+
+  .apply-heading {
+    margin-bottom: 35px;
+  }
+
+  .apply-section-heading {
+    margin-top: 35px;
+  }
+
+  .apply-section-heading h3 {
+    font-size: 20px;
+  }
+
+  .apply-success-card {
+    padding: 45px 22px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .apply-card {
+    padding: 30px 17px;
+  }
+
+  .apply-heading h1 {
+    font-size: 30px;
+  }
+
+  .apply-submit-button {
+    width: 100%;
+  }
+
+}
+.apply-page {
+  background-image: url("../assests/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: a#35200c;
+}

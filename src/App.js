@@ -1,25 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Classes from "./pages/Classes";
+import Contact from "./pages/Contact";
+import Apply from "./pages/Apply";
+import "./styles/App.css";
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+
+      <div className="app-wrapper">
+
+        <Navbar />
+
+        <main className="main-content">
+
+          <Routes>
+
+            <Route path="/" element={<Home />} />
+
+            <Route path="/about" element={<About />} />
+
+            <Route path="/classes" element={<Classes />} />
+
+            <Route path="/contact" element={<Contact />} />
+
+            <Route path="/apply" element={<Apply />} />
+
+            <Route path="/apply/:className" element={<Apply />} />
+
+            <Route
+              path="*"
+              element={
+                <div className="not-found">
+                  <h1>404</h1>
+                  <p>Sorry, this page could not be found.</p>
+                </div>
+              }
+            />
+
+          </Routes>
+
+        </main>
+
+        <Footer />
+
+      </div>
+
+    </BrowserRouter>
   );
-}
+
+};
 
 export default App;
