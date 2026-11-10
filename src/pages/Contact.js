@@ -27,7 +27,7 @@ const Contact = () => {
     e.preventDefault();
 
     console.log("Contact Message:", formData);
-    alert(JSON.stringify(formData,null,2));
+    alert("Name: " + formData.name + "\nEmail: " + formData.email + "\nMessage: " + formData.message);
     setSent(true);
 
   };
