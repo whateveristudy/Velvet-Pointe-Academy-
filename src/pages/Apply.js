@@ -194,7 +194,7 @@ const Apply = () => {
                   name="age"
                   className="form-control apply-input"
                   placeholder="Enter your age"
-                  min="8"
+                  min="3"
                   max="100"
                   value={formData.age}
                   onChange={handleChange}
